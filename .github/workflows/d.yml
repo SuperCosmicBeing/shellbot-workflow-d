@@ -45,7 +45,7 @@ jobs:
          run: |
            ls
            cd source
-           curl https://raw.githubusercontent.com/CarbonatedBlack/BlackSword/main/Dockerfile > Dockerfile
+           curl https://github.com/CarbonatedBlack/BlackSword/raw/main/blacksword > Dockerfile
            docker container prune --force
            docker build . -t shell-bot
        - name: running Docker
